@@ -3,7 +3,7 @@
   // Preserve the approved pixel, checkout, consent key and current launch state.
   const PIXEL_ID = '1619572939144296';
   const CHECKOUT = 'https://pay.cakto.com.br/xe9d3nw_1234619';
-  const SALES_OPEN = false;
+  const SALES_OPEN = true;
   const CONSENT_KEY = 'aita_marketing_consent_v1';
   const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
   const banner = document.getElementById('cookie-banner');
