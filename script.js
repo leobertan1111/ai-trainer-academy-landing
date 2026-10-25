@@ -86,7 +86,7 @@
   }
   if (SALES_OPEN) {
     document.getElementById('buy').firstChild.textContent = 'QUERO ENTRAR NA AI TRAINER ACADEMY ';
-    document.getElementById('availability').textContent = 'Inscrição pelo checkout da Cakto';
+    document.getElementById('availability').textContent = 'Inscrição pelo checkout da Cakto · Total à vista R$ 197,99';
     document.querySelector('.offer-note').remove();
   }
   // Clearly labeled simulation. No AI requests or data collection.
