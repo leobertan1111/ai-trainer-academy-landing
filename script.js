@@ -50,7 +50,7 @@
     }(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
     window.fbq('init', PIXEL_ID);
     window.fbq('track', 'PageView');
-    window.fbq('track', 'ViewContent', {content_name:'AI Trainer Academy — Formação Completa',content_type:'product',content_ids:['aita-197'],value:197,currency:'BRL'});
+    window.fbq('track', 'ViewContent', {content_name:'AI Trainer Academy — Curso Completo',content_type:'product',content_ids:['aita-197'],value:197,currency:'BRL'});
   }
   function setConsent(value) {
     try { localStorage.setItem(CONSENT_KEY, value); } catch (_) { /* Choice works for this visit. */ }
