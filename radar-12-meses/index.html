@@ -62,11 +62,21 @@
           <div class="price"><small>R$</small>147<em>,00</em></div>
           <span class="saving">ECONOMIZE R$181,90</span>
           <p class="terms">Pagamento único · 12 meses totais contando os 30 dias já incluídos · sem renovação automática.</p>
-          <!-- Substituir este link pelo código do botão ACEITAR gerado pela Cakto. -->
-          <a class="cta" id="cakto-accept-annual" href="#cakto-pendente">SIM, QUERO 12 MESES DE RADAR POR R$147</a>
+          <cakto-upsell-buttons class="cakto-buttons">
+            <cakto-upsell-accept
+              bg-color="#0b7058"
+              text-color="#ffffff"
+              upsell-accept-url="https://aitraineracademy.online/obrigado/"
+              offer-id="i6orfmv"
+              app-base-url="https://app.cakto.com.br"
+              offer-type="upsell"
+              upsell-reject-url="https://aitraineracademy.online/radar-6-meses/"
+            >SIM, QUERO 12 MESES DE RADAR POR R$147</cakto-upsell-accept>
+            <cakto-upsell-reject
+              upsell-reject-url="https://aitraineracademy.online/radar-6-meses/"
+            >Não, prefiro continuar apenas com os 30 dias incluídos.</cakto-upsell-reject>
+          </cakto-upsell-buttons>
           <div class="micro"><span>✓ Compra segura</span><span>✓ Um único pagamento</span><span>✓ Sem renovação</span></div>
-          <!-- Substituir este link pelo código do botão RECUSAR gerado pela Cakto. -->
-          <a class="decline" id="cakto-decline-annual" href="#cakto-pendente">Não, prefiro continuar apenas com os 30 dias incluídos.</a>
           <p class="disclaimer">O Radar ajuda a localizar e organizar oportunidades. Aprovação, tarefas, valores e pagamentos dependem das empresas e de cada projeto. Esta oferta não promete contratação ou renda.</p>
         </div>
       </div>
@@ -86,6 +96,7 @@
 
   <footer class="footer"><div class="wrap footer-inner"><img class="logo" src="../assets/logo.webp" width="180" height="72" alt="AI Trainer Academy"><p>Oferta complementar e opcional. AI Trainer Academy não representa as empresas listadas no Radar e não garante aprovação, tarefas ou rendimentos.</p></div></footer>
   <div class="sticky" data-sticky><div class="wrap sticky-inner"><span class="sticky-copy">12 meses totais de Radar por R$147<small>Pagamento único · sem renovação automática</small></span><a class="cta" href="#oferta" data-scroll-offer>QUERO ESTENDER MEU RADAR</a></div></div>
+  <script src="https://caktoscripts.nyc3.cdn.digitaloceanspaces.com/upsell.js"></script>
   <script src="../upsell.js" defer></script>
 </body>
 </html>
