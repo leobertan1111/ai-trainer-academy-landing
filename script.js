@@ -85,7 +85,7 @@
     try { return localStorage.getItem(CONSENT_KEY) === 'accepted'; } catch (_) { return false; }
   }
   if (SALES_OPEN) {
-    document.getElementById('buy').firstChild.textContent = 'QUERO ME PREPARAR PARA PROJETOS DE IA ';
+    document.getElementById('buy').firstChild.textContent = 'QUERO BUSCAR RENDA EM DÓLAR COM IA ';
     document.getElementById('availability').textContent = 'Inscrição pelo checkout da Cakto · Total à vista R$ 197,99';
     document.querySelector('.offer-note').remove();
   }
@@ -106,10 +106,10 @@
     });
   });
   const stepContent = [
-    ['Encontre seu ponto de partida.','Aprenda a olhar os requisitos de um projeto e decidir se faz sentido avançar.','Análise de uma oportunidade de referência'],
-    ['Dê clareza ao seu perfil.','Organize suas experiências e apresente evidências do que você já sabe fazer.','Currículo e LinkedIn alinhados aos requisitos'],
-    ['Saiba qual é a próxima ação.','Registre cada etapa e acompanhe o processo com prazos e estados reais.','Registro de candidaturas e acompanhamento'],
-    ['Treine seu olhar de avaliador.','Leia critérios, compare respostas e aprenda a justificar suas decisões.','Exercícios de avaliação e revisão']
+    ['Encontre projetos com potencial de renda.','Aprenda a conferir requisitos, país aceito e forma de pagamento antes de investir tempo em uma candidatura.','Seleção de uma oportunidade internacional de referência'],
+    ['Faça seu perfil disputar atenção.','Organize experiências verdadeiras e destaque as habilidades que podem aproximar você de uma seleção.','Currículo e LinkedIn direcionados ao projeto'],
+    ['Não deixe uma oportunidade escapar.','Registre cada candidatura, acompanhe prazos e saiba exatamente qual é a próxima ação.','Painel de candidaturas e acompanhamento'],
+    ['Prepare-se para entregar e receber.','Pratique critérios, compare respostas e organize tarefas, valores e pagamentos quando houver trabalho.','Exercícios de avaliação e controle de recebimentos']
   ];
   let manualStepUntil = 0;
   function activateStep(index) {
