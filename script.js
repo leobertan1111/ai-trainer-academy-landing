@@ -111,6 +111,7 @@
     ['Saiba qual é a próxima ação.','Registre cada etapa e acompanhe o processo com prazos e estados reais.','Registro de candidaturas e acompanhamento'],
     ['Treine seu olhar de avaliador.','Leia critérios, compare respostas e aprenda a justificar suas decisões.','Exercícios de avaliação e revisão']
   ];
+  let manualStepUntil = 0;
   function activateStep(index) {
     const [title, description, deliverable] = stepContent[index];
     document.getElementById('path-title').textContent = title;
@@ -123,10 +124,14 @@
     step.tabIndex = 0;
     step.setAttribute('role', 'button');
     step.setAttribute('aria-label', `Ver etapa ${index + 1}: ${step.querySelector('h3').textContent}`);
-    step.addEventListener('click', () => activateStep(index));
+    step.addEventListener('click', () => {
+      manualStepUntil = Date.now() + 1800;
+      activateStep(index);
+    });
     step.addEventListener('keydown', event => {
       if (event.key === 'Enter' || event.key === ' ') {
         event.preventDefault();
+        manualStepUntil = Date.now() + 1800;
         activateStep(index);
       }
     });
@@ -175,6 +180,7 @@
     sectionObserver.observe(hero);
     sectionObserver.observe(offer);
     const pathObserver = new IntersectionObserver(entries => {
+      if (Date.now() < manualStepUntil) return;
       const active = entries.filter(entry => entry.isIntersecting).sort((a,b) => b.intersectionRatio-a.intersectionRatio)[0];
       if (active) activateStep(Number(active.target.dataset.step));
     }, {rootMargin:'-20% 0px -40% 0px',threshold:[0,.5,1]});
