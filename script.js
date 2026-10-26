@@ -72,7 +72,7 @@
   });
   const checkoutUrl = new URL(CHECKOUT);
   for (const [key, value] of new URLSearchParams(location.search)) {
-    if (/^utm_(source|medium|campaign|content|term|id)$/i.test(key) && value.length < 256) checkoutUrl.searchParams.set(key, value);
+    if ((/^utm_(source|medium|campaign|content|term|id)$/i.test(key) || key === 'fbclid') && value.length < 256) checkoutUrl.searchParams.set(key, value);
   }
   document.querySelectorAll('[data-checkout]').forEach(link => {
     link.href = checkoutUrl.toString();
@@ -85,7 +85,7 @@
     try { return localStorage.getItem(CONSENT_KEY) === 'accepted'; } catch (_) { return false; }
   }
   if (SALES_OPEN) {
-    document.getElementById('buy').firstChild.textContent = 'QUERO ENTRAR NA AI TRAINER ACADEMY ';
+    document.getElementById('buy').firstChild.textContent = 'QUERO ME PREPARAR PARA PROJETOS DE IA ';
     document.getElementById('availability').textContent = 'Inscrição pelo checkout da Cakto · Total à vista R$ 197,99';
     document.querySelector('.offer-note').remove();
   }
@@ -98,8 +98,11 @@
         other.setAttribute('aria-pressed', String(selected));
       });
       const feedback = document.querySelector('.demo-feedback');
-      if (button.dataset.answer === 'b') feedback.innerHTML = '<strong>Isso: a resposta B segue o pedido.</strong> Ela explica a atividade em uma frase e com linguagem simples. Conferir se a resposta seguiu o pedido faz parte da avaliação de qualidade.';
-      else feedback.innerHTML = '<strong>Repare nos termos usados.</strong> A resposta A inclui jargões como “benchmarking” e “scoring”, contrariando o pedido. A B explica a atividade com linguagem simples.';
+      const correct = button.dataset.answer === 'b';
+      feedback.classList.toggle('is-correct', correct);
+      feedback.classList.toggle('is-review', !correct);
+      if (correct) feedback.innerHTML = '<strong>Acertou. A resposta B segue o pedido.</strong> Ela explica a atividade em uma frase e usa linguagem simples. Esse tipo de conferência faz parte de uma avaliação de qualidade.';
+      else feedback.innerHTML = '<strong>Quase. O problema está nos jargões.</strong> “Benchmarking”, “scoring” e “ranking” contrariam a instrução. A resposta B comunica a mesma ideia com clareza.';
     });
   });
   const stepContent = [
@@ -116,6 +119,18 @@
     document.querySelectorAll('[data-step]').forEach((step, i) => step.classList.toggle('is-active', i === index));
     document.querySelectorAll('.path-mini-progress span').forEach((step, i) => step.classList.toggle('active', i <= index));
   }
+  document.querySelectorAll('[data-step]').forEach((step, index) => {
+    step.tabIndex = 0;
+    step.setAttribute('role', 'button');
+    step.setAttribute('aria-label', `Ver etapa ${index + 1}: ${step.querySelector('h3').textContent}`);
+    step.addEventListener('click', () => activateStep(index));
+    step.addEventListener('keydown', event => {
+      if (event.key === 'Enter' || event.key === ' ') {
+        event.preventDefault();
+        activateStep(index);
+      }
+    });
+  });
   document.querySelectorAll('.module').forEach(module => {
     module.addEventListener('toggle', () => {
       if (module.open) document.querySelectorAll('.module').forEach(other => { if (other !== module) other.open = false; });
@@ -130,6 +145,26 @@
     }, {threshold:0.08});
     document.querySelectorAll('.reveal').forEach(element => revealObserver.observe(element));
     document.documentElement.classList.add('motion-ready');
+    const countObserver = new IntersectionObserver(entries => {
+      for (const entry of entries) if (entry.isIntersecting) {
+        const element = entry.target;
+        const target = Number(element.dataset.count);
+        if (reducedMotion.matches) element.textContent = String(target);
+        else {
+          const start = performance.now();
+          const duration = 900;
+          const tick = now => {
+            const progress = Math.min(1, (now - start) / duration);
+            const eased = 1 - Math.pow(1 - progress, 3);
+            element.textContent = String(Math.round(target * eased));
+            if (progress < 1) requestAnimationFrame(tick);
+          };
+          requestAnimationFrame(tick);
+        }
+        countObserver.unobserve(element);
+      }
+    }, {threshold:.7});
+    document.querySelectorAll('[data-count]').forEach(element => countObserver.observe(element));
     const sectionObserver = new IntersectionObserver(entries => {
       for (const entry of entries) {
         if (entry.target === hero) heroVisible = entry.isIntersecting;
@@ -170,5 +205,19 @@
       card.style.setProperty('--mouse-x',(event.clientX-box.left)+'px');
       card.style.setProperty('--mouse-y',(event.clientY-box.top)+'px');
     }, {passive:true}));
+    document.querySelectorAll('.magnetic').forEach(button => {
+      button.addEventListener('pointermove', event => {
+        if (reducedMotion.matches) return;
+        const box = button.getBoundingClientRect();
+        const x = (event.clientX - box.left - box.width / 2) * .08;
+        const y = (event.clientY - box.top - box.height / 2) * .12;
+        button.style.setProperty('--mag-x', `${x}px`);
+        button.style.setProperty('--mag-y', `${y}px`);
+      }, {passive:true});
+      button.addEventListener('pointerleave', () => {
+        button.style.setProperty('--mag-x', '0px');
+        button.style.setProperty('--mag-y', '0px');
+      });
+    });
   }
 })();
