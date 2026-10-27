@@ -4,10 +4,10 @@
 
 No editor do checkout principal da **AI Trainer Academy**, remova as quatro artes antigas e mantenha apenas estas duas, nesta ordem:
 
-1. `assets/checkout/checkout-transformacao.png`
-2. `assets/checkout/checkout-entrega-radar.png`
+1. `assets/checkout/checkout-01-topo-premium.png`
+2. `assets/checkout/checkout-02-final-seguranca.png`
 
-As duas imagens têm 4800 × 1920 px. Foram desenhadas como faixas curtas, com áreas de segurança separadas, para diminuir a rolagem antes do formulário e continuar legíveis no celular.
+As duas imagens têm 3548 × 1774 px. Foram desenhadas como faixas curtas de proporção 2:1, com áreas de segurança separadas, para diminuir a rolagem e continuar legíveis no checkout.
 
 ## 2. Adicionar o Radar anual como Order Bump
 
@@ -37,13 +37,13 @@ No painel da Cakto:
 
 > SIM, QUERO 12 MESES DE RADAR POR MAIS R$ 147
 
-## 3. Evitar oferta duplicada
+## 3. Manter o funil pós-compra
 
-O Radar anual não deve aparecer como Order Bump e, depois, ser oferecido novamente para a mesma pessoa no pós-compra. Depois de ativar o Order Bump, abra **Upsell/Downsell** do produto principal e troque o redirecionamento pós-compra para:
+Por decisão comercial, mantenha ativos tanto o **Order Bump** no checkout quanto as páginas de **upsell e downsell** após a compra. Preserve o redirecionamento atual do produto principal para:
 
-`https://aitraineracademy.online/obrigado/`
+`https://aitraineracademy.online/radar-12-meses/`
 
-As páginas antigas de upsell e downsell podem permanecer publicadas, mas não devem ser o redirecionamento automático do checkout principal enquanto o mesmo Radar anual estiver no Order Bump.
+No teste final, confira também o caminho de quem aceita o Order Bump para entender como a Cakto apresenta a oferta pós-compra nesse caso.
 
 ## 4. Teste antes de divulgar
 
@@ -54,4 +54,4 @@ Abra o checkout principal em uma janela anônima e confirme:
 - desmarcado, o total permanece apenas o do curso e a taxa exibida pela Cakto;
 - marcado, o total aumenta exatamente R$ 147;
 - a compra sem o Order Bump mantém os 30 dias de Radar incluídos;
-- depois do pagamento, o comprador segue para a página de obrigado, sem receber a mesma oferta outra vez.
+- depois do pagamento, o comprador segue para a página anual de upsell; ao recusar, segue para o downsell e, depois, para a página de obrigado.

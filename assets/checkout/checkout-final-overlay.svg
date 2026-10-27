@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1774" height="887" viewBox="0 0 1774 887">
+  <defs>
+    <linearGradient id="fade" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#061923" stop-opacity=".78"/><stop offset=".74" stop-color="#061923" stop-opacity=".2"/><stop offset="1" stop-color="#061923" stop-opacity="0"/></linearGradient>
+    <filter id="shadow"><feDropShadow dx="0" dy="5" stdDeviation="8" flood-color="#001018" flood-opacity=".55"/></filter>
+  </defs>
+  <rect width="1080" height="887" fill="url(#fade)"/>
+  <g font-family="DejaVu Sans,Arial,sans-serif" filter="url(#shadow)">
+    <rect x="84" y="169" width="465" height="49" rx="24.5" fill="#7df0ce" fill-opacity=".13" stroke="#7df0ce" stroke-opacity=".5"/>
+    <text x="112" y="202" fill="#8cf2d5" font-size="21" font-weight="800" letter-spacing="2.7">COMPRA PROTEGIDA  ·  CHECKOUT SEGURO</text>
+    <text x="84" y="327" fill="#f7fffb" font-size="76" font-weight="850">Comece com</text>
+    <text x="84" y="412" fill="#7df0ce" font-size="76" font-weight="850">tranquilidade.</text>
+    <text x="84" y="495" fill="#c1d5d2" font-size="29">Você tem 7 dias para conhecer o treinamento.</text>
+    <text x="84" y="539" fill="#c1d5d2" font-size="29">Se não fizer sentido, solicite o reembolso</text>
+    <text x="84" y="583" fill="#c1d5d2" font-size="29">dentro do prazo.</text>
+  </g>
+  <g transform="translate(84 661)" font-family="DejaVu Sans,Arial,sans-serif">
+    <rect width="805" height="112" rx="22" fill="#effff8"/>
+    <circle cx="55" cy="56" r="25" fill="#0c745e"/><path d="M42 56l9 9 18-23" stroke="#effff8" stroke-width="7" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="101" y="48" fill="#0a3d35" font-size="26" font-weight="850">7 DIAS DE GARANTIA</text>
+    <text x="101" y="80" fill="#58746d" font-size="19">Acesso por e-mail · Pagamento seguro pela Cakto</text>
+  </g>
+  <text x="84" y="826" fill="#a6c1bd" font-family="DejaVu Sans,Arial,sans-serif" font-size="19">Revise seus dados e finalize sua inscrição com segurança.</text>
+</svg>
