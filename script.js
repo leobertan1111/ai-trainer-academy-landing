@@ -91,7 +91,7 @@
     try { return localStorage.getItem(CONSENT_KEY) === 'accepted'; } catch (_) { return false; }
   }
   if (SALES_OPEN) {
-    document.getElementById('buy').firstChild.textContent = 'QUERO BUSCAR RENDA EM DÓLAR COM IA ';
+    document.getElementById('buy').firstChild.textContent = 'QUERO ABRIR ESSA NOVA FONTE DE RENDA ';
     document.getElementById('availability').textContent = 'Compra segura pela Cakto · 12x de R$ 20,35 + taxa';
     document.querySelector('.offer-note').remove();
   }
@@ -112,10 +112,10 @@
     });
   });
   const stepContent = [
-    ['Encontre projetos com potencial de renda.','Aprenda a conferir requisitos, país aceito e forma de pagamento antes de investir tempo em uma candidatura.','Seleção de uma oportunidade internacional de referência'],
-    ['Faça seu perfil disputar atenção.','Organize experiências verdadeiras e destaque as habilidades que podem aproximar você de uma seleção.','Currículo e LinkedIn direcionados ao projeto'],
-    ['Não deixe uma oportunidade escapar.','Registre cada candidatura, acompanhe prazos e saiba exatamente qual é a próxima ação.','Painel de candidaturas e acompanhamento'],
-    ['Prepare-se para entregar e receber.','Pratique critérios, compare respostas e organize tarefas, valores e pagamentos quando houver trabalho.','Exercícios de avaliação e controle de recebimentos']
+    ['Vá direto aos projetos que podem pagar.','Confira requisitos, país aceito e forma de pagamento antes de investir tempo — e encontre oportunidades que realmente combinam com você.','Uma oportunidade internacional real para disputar'],
+    ['Faça seu perfil merecer atenção internacional.','Organize experiências verdadeiras e destaque o valor que você pode entregar para aumentar sua força na seleção.','Currículo e LinkedIn direcionados ao projeto'],
+    ['Pare de perder chances por desorganização.','Registre cada candidatura, acompanhe prazos e saiba exatamente qual ação pode aproximar você da próxima etapa.','Painel de candidaturas e próximas ações'],
+    ['Chegue preparado quando a tarefa valer dinheiro.','Pratique critérios, compare respostas e organize tarefas e pagamentos para executar com confiança quando o trabalho chegar.','Exercícios de avaliação e controle de recebimentos']
   ];
   let manualStepUntil = 0;
   function activateStep(index) {
