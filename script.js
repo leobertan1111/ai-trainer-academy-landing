@@ -3,6 +3,7 @@
   // Preserve the approved pixel, checkout, consent key and current launch state.
   const PIXEL_ID = '1619572939144296';
   const CHECKOUT = 'https://pay.cakto.com.br/xe9d3nw_1234619';
+  const WHATSAPP_URL = 'https://wa.me/5546999319286?text=Ol%C3%A1%21%20Tenho%20uma%20d%C3%BAvida%20antes%20de%20entrar%20na%20AI%20Trainer%20Academy.';
   const SALES_OPEN = true;
   const CONSENT_KEY = 'aita_marketing_consent_v1';
   const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
@@ -40,6 +41,11 @@
   document.getElementById('privacy-close').addEventListener('click', () => privacy.close());
   document.getElementById('proof-open').addEventListener('click', () => openDialog(proof));
   document.getElementById('proof-close').addEventListener('click', () => proof.close());
+  const whatsapp = document.getElementById('whatsapp-float');
+  if (WHATSAPP_URL) {
+    whatsapp.href = WHATSAPP_URL;
+    whatsapp.hidden = false;
+  }
   // No marketing request before consent.
   function loadMetaPixel() {
     if (window.fbq) return;
@@ -85,8 +91,8 @@
     try { return localStorage.getItem(CONSENT_KEY) === 'accepted'; } catch (_) { return false; }
   }
   if (SALES_OPEN) {
-    document.getElementById('buy').firstChild.textContent = 'QUERO ABRIR ESSA NOVA FONTE DE RENDA ';
-    document.getElementById('availability').textContent = 'Inscrição pelo checkout da Cakto · Total à vista R$ 197,99';
+    document.getElementById('buy').firstChild.textContent = 'QUERO BUSCAR RENDA EM DÓLAR COM IA ';
+    document.getElementById('availability').textContent = 'Compra segura pela Cakto · 12x de R$ 20,35 + taxa';
     document.querySelector('.offer-note').remove();
   }
   // Clearly labeled simulation. No AI requests or data collection.
@@ -106,10 +112,10 @@
     });
   });
   const stepContent = [
-    ['Vá direto aos projetos que podem pagar.','Confira requisitos, país aceito e forma de pagamento antes de investir tempo — e encontre oportunidades que realmente combinam com você.','Uma oportunidade internacional real para disputar'],
-    ['Faça seu perfil merecer atenção internacional.','Organize experiências verdadeiras e destaque o valor que você pode entregar para aumentar sua força na seleção.','Currículo e LinkedIn direcionados ao projeto'],
-    ['Pare de perder chances por desorganização.','Registre cada candidatura, acompanhe prazos e saiba exatamente qual ação pode aproximar você da próxima etapa.','Painel de candidaturas e próximas ações'],
-    ['Chegue preparado quando a tarefa valer dinheiro.','Pratique critérios, compare respostas e organize tarefas e pagamentos para executar com confiança quando o trabalho chegar.','Exercícios de avaliação e controle de recebimentos']
+    ['Encontre projetos com potencial de renda.','Aprenda a conferir requisitos, país aceito e forma de pagamento antes de investir tempo em uma candidatura.','Seleção de uma oportunidade internacional de referência'],
+    ['Faça seu perfil disputar atenção.','Organize experiências verdadeiras e destaque as habilidades que podem aproximar você de uma seleção.','Currículo e LinkedIn direcionados ao projeto'],
+    ['Não deixe uma oportunidade escapar.','Registre cada candidatura, acompanhe prazos e saiba exatamente qual é a próxima ação.','Painel de candidaturas e acompanhamento'],
+    ['Prepare-se para entregar e receber.','Pratique critérios, compare respostas e organize tarefas, valores e pagamentos quando houver trabalho.','Exercícios de avaliação e controle de recebimentos']
   ];
   let manualStepUntil = 0;
   function activateStep(index) {
