@@ -1,24 +1,18 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 0 1200 1200">
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1400" viewBox="0 0 1400 1400">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#071923"/><stop offset=".65" stop-color="#0d3b3a"/><stop offset="1" stop-color="#14725f"/></linearGradient>
-    <radialGradient id="glow"><stop stop-color="#83ead1" stop-opacity=".32"/><stop offset="1" stop-color="#83ead1" stop-opacity="0"/></radialGradient>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#061923"/><stop offset=".62" stop-color="#0b3438"/><stop offset="1" stop-color="#0b745f"/></linearGradient>
+    <radialGradient id="glow"><stop stop-color="#7df0ce" stop-opacity=".3"/><stop offset="1" stop-color="#7df0ce" stop-opacity="0"/></radialGradient>
+    <filter id="shadow"><feDropShadow dx="0" dy="20" stdDeviation="26" flood-color="#001117" flood-opacity=".4"/></filter>
   </defs>
-  <rect width="1200" height="1200" rx="76" fill="url(#bg)"/>
-  <circle cx="886" cy="390" r="440" fill="url(#glow)"/>
-  <g opacity=".22" stroke="#9cf0d5" fill="none" stroke-width="2"><circle cx="886" cy="390" r="250"/><circle cx="886" cy="390" r="170" stroke-dasharray="13 16"/><circle cx="886" cy="390" r="86"/><path d="M600 390h570M886 105v570"/></g>
-  <path d="M886 390l170-180A248 248 0 0 1 1126 390Z" fill="#83ead1" fill-opacity=".18"/>
-  <circle cx="886" cy="390" r="22" fill="#83ead1"/><circle cx="770" cy="304" r="12" fill="#83ead1"/><circle cx="1015" cy="465" r="12" fill="#83ead1"/>
+  <rect width="1400" height="1400" rx="84" fill="url(#bg)"/>
+  <circle cx="1100" cy="285" r="520" fill="url(#glow)"/>
+  <g opacity=".2" stroke="#a1f6dc" fill="none" stroke-width="2"><circle cx="1050" cy="305" r="250"/><circle cx="1050" cy="305" r="166" stroke-dasharray="12 17"/><circle cx="1050" cy="305" r="78"/><path d="M780 305h540M1050 35v540"/></g>
+  <path d="M1050 305l185-185A262 262 0 0 1 1312 305Z" fill="#7df0ce" fill-opacity=".2"/><circle cx="1050" cy="305" r="24" fill="#7df0ce"/><circle cx="925" cy="215" r="13" fill="#7df0ce"/><circle cx="1168" cy="410" r="13" fill="#7df0ce"/>
   <g font-family="DejaVu Sans,Arial,sans-serif">
-    <text x="76" y="93" fill="#83ead1" font-size="26" font-weight="800" letter-spacing="4">AI TRAINER ACADEMY</text>
-    <rect x="76" y="140" width="330" height="54" rx="27" fill="#83ead1" fill-opacity=".13" stroke="#83ead1" stroke-opacity=".4"/>
-    <text x="105" y="176" fill="#8ff0d2" font-size="21" font-weight="800" letter-spacing="2">OFERTA DO CHECKOUT</text>
-    <text x="76" y="705" fill="#f4fff9" font-size="76" font-weight="800">Radar de</text>
-    <text x="76" y="790" fill="#f4fff9" font-size="76" font-weight="800">Oportunidades</text>
-    <text x="76" y="860" fill="#8ff0d2" font-size="45" font-weight="800">12 MESES TOTAIS</text>
-    <text x="76" y="965" fill="#f4fff9" font-size="92" font-weight="800">R$ 147</text>
-    <text x="486" y="965" fill="#b7d6cf" font-size="29" font-weight="700">à vista</text>
-    <text x="76" y="1025" fill="#b7d6cf" font-size="26">Menos de R$13/mês · Sem renovação automática</text>
-    <rect x="76" y="1073" width="650" height="68" rx="16" fill="#eafff5"/>
-    <text x="106" y="1118" fill="#0d493e" font-size="25" font-weight="800">+11 MESES ALÉM DOS 30 DIAS INCLUÍDOS</text>
+    <text x="80" y="94" fill="#8cf2d5" font-size="25" font-weight="800" letter-spacing="4">AI TRAINER ACADEMY</text>
+    <rect x="80" y="143" width="385" height="58" rx="29" fill="#7df0ce" fill-opacity=".13" stroke="#7df0ce" stroke-opacity=".42"/><text x="112" y="182" fill="#8cf2d5" font-size="23" font-weight="800" letter-spacing="2">OPCIONAL NO CHECKOUT</text>
+    <text x="80" y="570" fill="#f5fff9" font-size="78" font-weight="850">Não pare de encontrar</text><text x="80" y="662" fill="#f5fff9" font-size="78" font-weight="850">oportunidades no 31º dia.</text><text x="80" y="754" fill="#7df0ce" font-size="49" font-weight="850">RADAR · 12 MESES TOTAIS</text>
+    <g transform="translate(80 824)" filter="url(#shadow)"><rect width="1240" height="324" rx="32" fill="#effff8"/><text x="48" y="75" fill="#496a62" font-size="26" font-weight="800">ADICIONE MAIS 11 MESES POR</text><text x="48" y="204" fill="#0a5f4d" font-size="116" font-weight="850">R$ 147</text><text x="522" y="196" fill="#244f45" font-size="31" font-weight="800">À VISTA</text><rect x="48" y="238" width="1144" height="1" fill="#83ac9f" fill-opacity=".5"/><text x="48" y="286" fill="#3e6259" font-size="27" font-weight="750">Menos de R$13/mês  ·  pagamento único  ·  sem renovação automática</text></g>
+    <g transform="translate(80 1215)"><circle cx="24" cy="24" r="24" fill="#7df0ce"/><path d="M12 24l8 8 17-21" stroke="#07382f" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/><text x="70" y="19" fill="#eefcf7" font-size="24" font-weight="800">SEUS 30 DIAS JÁ ESTÃO INCLUÍDOS</text><text x="70" y="51" fill="#a8c9c2" font-size="21">Você escolhe se quer estender o acesso.</text></g>
   </g>
 </svg>

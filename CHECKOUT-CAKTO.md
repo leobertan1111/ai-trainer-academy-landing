@@ -7,7 +7,7 @@ No editor do checkout principal da **AI Trainer Academy**, remova as quatro arte
 1. `assets/checkout/checkout-transformacao.png`
 2. `assets/checkout/checkout-entrega-radar.png`
 
-As duas imagens têm 4267 × 1707 px. Foram desenhadas como faixas curtas para diminuir a rolagem antes do formulário e continuar legíveis no celular.
+As duas imagens têm 4800 × 1920 px. Foram desenhadas como faixas curtas, com áreas de segurança separadas, para diminuir a rolagem antes do formulário e continuar legíveis no celular.
 
 ## 2. Adicionar o Radar anual como Order Bump
 
