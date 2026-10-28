@@ -49,10 +49,62 @@
   const vslVideo = document.getElementById('vsl-video');
   const vslPlay = document.getElementById('vsl-play');
   if (vslVideo && vslPlay) {
-    vslPlay.addEventListener('click', () => vslVideo.play().catch(() => {}));
-    vslVideo.addEventListener('play', () => { vslPlay.hidden = true; });
-    vslVideo.addEventListener('pause', () => { vslPlay.hidden = false; });
-    vslVideo.addEventListener('ended', () => { vslPlay.hidden = false; });
+    const toggle = document.getElementById('vsl-toggle');
+    const sound = document.getElementById('vsl-sound');
+    const progress = document.getElementById('vsl-progress');
+    const progressFill = document.getElementById('vsl-progress-fill');
+    const time = document.getElementById('vsl-time');
+    let furthestTime = 0;
+    let autoplayAttempted = false;
+    const formatTime = seconds => `${Math.floor(seconds / 60)}:${String(Math.floor(seconds % 60)).padStart(2, '0')}`;
+    const startVideo = () => vslVideo.play().catch(() => { vslPlay.hidden = false; });
+    const updateProgress = () => {
+      const duration = Number.isFinite(vslVideo.duration) ? vslVideo.duration : 151.5;
+      const percent = Math.min(100, (vslVideo.currentTime / duration) * 100);
+      progressFill.style.width = `${percent}%`;
+      progress.setAttribute('aria-valuenow', String(Math.round(percent)));
+      progress.setAttribute('aria-valuetext', `${formatTime(vslVideo.currentTime)} de ${formatTime(duration)}`);
+      time.textContent = `${formatTime(vslVideo.currentTime)} / ${formatTime(duration)}`;
+    };
+    vslPlay.addEventListener('click', startVideo);
+    toggle.addEventListener('click', () => {
+      if (vslVideo.ended) vslVideo.currentTime = 0;
+      if (vslVideo.paused) startVideo();
+      else vslVideo.pause();
+    });
+    sound.addEventListener('click', () => {
+      vslVideo.muted = !vslVideo.muted;
+      sound.textContent = vslVideo.muted ? 'Ativar som' : 'Silenciar';
+      sound.setAttribute('aria-label', vslVideo.muted ? 'Ativar áudio' : 'Silenciar áudio');
+    });
+    vslVideo.addEventListener('timeupdate', () => {
+      furthestTime = Math.max(furthestTime, vslVideo.currentTime);
+      updateProgress();
+    });
+    vslVideo.addEventListener('seeking', () => {
+      if (vslVideo.currentTime > furthestTime + 0.5) vslVideo.currentTime = furthestTime;
+    });
+    vslVideo.addEventListener('loadedmetadata', updateProgress);
+    vslVideo.addEventListener('play', () => {
+      vslPlay.hidden = true;
+      toggle.textContent = 'Pausar';
+      toggle.setAttribute('aria-label', 'Pausar vídeo');
+    });
+    vslVideo.addEventListener('pause', () => {
+      toggle.textContent = vslVideo.ended ? 'Rever' : 'Continuar';
+      toggle.setAttribute('aria-label', vslVideo.ended ? 'Rever vídeo' : 'Continuar vídeo');
+    });
+    if ('IntersectionObserver' in window) {
+      const videoObserver = new IntersectionObserver(entries => {
+        if (!entries[0].isIntersecting || autoplayAttempted || reducedMotion.matches) return;
+        autoplayAttempted = true;
+        startVideo();
+        videoObserver.disconnect();
+      }, {threshold: 0.35});
+      videoObserver.observe(vslVideo);
+    } else {
+      vslPlay.hidden = false;
+    }
   }
   // No marketing request before consent.
   function loadMetaPixel() {
