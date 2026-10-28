@@ -13,7 +13,7 @@ O checkout exibe **Radar de Oportunidades — 3 Meses** por **R$ 47**, opcional.
 
 ## Após a compra
 
-A oferta de 12 meses de Radar permanece no fluxo pós-compra, seguida da página de downsell quando recusada. Essa oferta não é mencionada na landing page. Antes de divulgar o fluxo, faça uma compra de teste para validar redirecionamentos, entrega e evitar oferta duplicada para quem adicionou o bump.
+A oferta de 12 meses de Radar permanece no fluxo pós-compra; ao recusá-la, o comprador vê a oferta de 6 meses. Aceitar qualquer oferta ou recusar a segunda leva a `/obrigado/`. A landing page não apresenta essas ofertas pós-compra. As páginas públicas e o caminho de recusa foram conferidos sem finalizar pedido. O produtor optou por não fazer compra de teste, portanto cobrança, e-mail de acesso, concessão do Radar e combinação de períodos com o order bump não foram verificados. Definir na operação como as extensões se combinam para quem compra o bump e também aceita uma oferta posterior; o texto das páginas orienta esses compradores a confirmar o período antes do aceite.
 
 ## Artes do checkout
 
