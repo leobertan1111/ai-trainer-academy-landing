@@ -1,8 +1,8 @@
 (() => {
   'use strict';
-  // Preserve the approved pixel, checkout, consent key and current launch state.
+  // Preserve the approved pixel, consent key and current launch state.
   const PIXEL_ID = '1619572939144296';
-  const CHECKOUT = 'https://pay.cakto.com.br/xe9d3nw_1234619';
+  const CHECKOUT = 'https://pay.cakto.com.br/gzsuitq';
   const WHATSAPP_URL = 'https://wa.me/5546999319286?text=Ol%C3%A1%21%20Tenho%20uma%20d%C3%BAvida%20antes%20de%20entrar%20na%20AI%20Trainer%20Academy.';
   const SALES_OPEN = true;
   const CONSENT_KEY = 'aita_marketing_consent_v1';
@@ -45,6 +45,14 @@
   if (WHATSAPP_URL) {
     whatsapp.href = WHATSAPP_URL;
     whatsapp.hidden = false;
+  }
+  const vslVideo = document.getElementById('vsl-video');
+  const vslPlay = document.getElementById('vsl-play');
+  if (vslVideo && vslPlay) {
+    vslPlay.addEventListener('click', () => vslVideo.play().catch(() => {}));
+    vslVideo.addEventListener('play', () => { vslPlay.hidden = true; });
+    vslVideo.addEventListener('pause', () => { vslPlay.hidden = false; });
+    vslVideo.addEventListener('ended', () => { vslPlay.hidden = false; });
   }
   // No marketing request before consent.
   function loadMetaPixel() {
