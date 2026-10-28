@@ -95,3 +95,12 @@
 .vsl-progress span{display:block;width:0;height:100%;border-radius:inherit;background:linear-gradient(90deg,#63d9b8,#a4f3d9)}
 .vsl-time{color:#d4eae6;font-size:10px;font-variant-numeric:tabular-nums;white-space:nowrap}
 @media(max-width:540px){.vsl-controls{gap:7px;padding:10px;grid-template-columns:auto minmax(0,1fr) auto}.vsl-controls button{min-height:33px;padding:7px 8px;font-size:9px}.vsl-time{display:none}}
+
+/* Keep the WhatsApp tooltip independent from the old icon-span rule. */
+.whatsapp-float>.whatsapp-tip{grid-row:auto;display:block;place-items:initial;top:auto;right:-3px;bottom:76px;width:max-content;height:auto;max-width:calc(100vw - 105px);padding:10px 13px;border:1px solid #c3ded2;border-radius:9px;background:#fff;color:#194532;font-size:11px;line-height:1.25;white-space:nowrap;transform:translateY(6px)}
+.whatsapp-float:hover>.whatsapp-tip,.whatsapp-float:focus-visible>.whatsapp-tip{transform:translateY(0)}
+@media(max-width:540px){.whatsapp-float>.whatsapp-tip{display:none}}
+
+.vsl-sound-overlay{position:absolute;left:50%;top:45%;z-index:2;display:flex;align-items:center;justify-content:center;gap:12px;min-height:64px;padding:13px 23px;border:1px solid #d4fff0;border-radius:999px;background:#f5fff9f2;color:#164d3d;box-shadow:0 0 0 8px #0a3a3580,0 17px 50px #001c22a6;backdrop-filter:blur(10px);font:inherit;font-size:16px;font-weight:800;white-space:nowrap;cursor:pointer;transform:translate(-50%,-50%);transition:transform .25s,background .25s,box-shadow .25s}
+.vsl-sound-overlay svg{width:28px;height:28px;flex-shrink:0}.vsl-sound-overlay:hover,.vsl-sound-overlay:focus-visible{background:#fff;transform:translate(-50%,-50%) scale(1.045);box-shadow:0 0 0 10px #0a3a3580,0 20px 55px #001c22ba}.vsl-sound-overlay[hidden]{display:none}
+@media(max-width:540px){.vsl-sound-overlay{gap:8px;min-height:46px;max-width:calc(100% - 22px);padding:9px 13px;font-size:11px}.vsl-sound-overlay svg{width:21px;height:21px}}

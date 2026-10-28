@@ -51,6 +51,7 @@
   if (vslVideo && vslPlay) {
     const toggle = document.getElementById('vsl-toggle');
     const sound = document.getElementById('vsl-sound');
+    const soundOverlay = document.getElementById('vsl-sound-overlay');
     const progress = document.getElementById('vsl-progress');
     const progressFill = document.getElementById('vsl-progress-fill');
     const time = document.getElementById('vsl-time');
@@ -72,11 +73,14 @@
       if (vslVideo.paused) startVideo();
       else vslVideo.pause();
     });
-    sound.addEventListener('click', () => {
+    const toggleSound = () => {
       vslVideo.muted = !vslVideo.muted;
       sound.textContent = vslVideo.muted ? 'Ativar som' : 'Silenciar';
       sound.setAttribute('aria-label', vslVideo.muted ? 'Ativar áudio' : 'Silenciar áudio');
-    });
+      soundOverlay.hidden = !vslVideo.muted || vslVideo.paused;
+    };
+    sound.addEventListener('click', toggleSound);
+    soundOverlay.addEventListener('click', toggleSound);
     vslVideo.addEventListener('timeupdate', () => {
       furthestTime = Math.max(furthestTime, vslVideo.currentTime);
       updateProgress();
@@ -87,10 +91,12 @@
     vslVideo.addEventListener('loadedmetadata', updateProgress);
     vslVideo.addEventListener('play', () => {
       vslPlay.hidden = true;
+      soundOverlay.hidden = !vslVideo.muted;
       toggle.textContent = 'Pausar';
       toggle.setAttribute('aria-label', 'Pausar vídeo');
     });
     vslVideo.addEventListener('pause', () => {
+      soundOverlay.hidden = true;
       toggle.textContent = vslVideo.ended ? 'Rever' : 'Continuar';
       toggle.setAttribute('aria-label', vslVideo.ended ? 'Rever vídeo' : 'Continuar vídeo');
     });
