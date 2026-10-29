@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Comece aqui",
+    "slug": "comece-aqui",
+    "title": "Trabalho com treinamento de IA: por onde começar",
+    "description": "Entenda o trabalho humano de avaliação de IA, conheça critérios e escolha seus primeiros passos de preparação.",
+    "intro": "Se você está descobrindo esse mercado, comece entendendo o que uma pessoa avalia em uma resposta de IA. Depois, pratique com um exemplo próprio antes de escolher uma oportunidade. Os guias desta categoria apresentam os fundamentos e fazem a ponte entre curiosidade e preparação. Eles ajudam a compreender a atividade sem confundir aprendizado com contratação.",
+    "action": "Comece pelo guia sobre o papel do avaliador e experimente o treino gratuito. Em seguida, visite Oportunidades para aprender a pesquisar fontes oficiais."
+  },
+  {
+    "name": "Oportunidades",
+    "slug": "oportunidades",
+    "title": "Projetos de treinamento de IA: fontes e busca organizada",
+    "description": "Aprenda onde pesquisar projetos de treinamento de IA, como conferir fontes e como registrar oportunidades compatíveis.",
+    "intro": "Pesquisar oportunidades exige mais do que conhecer nomes de plataformas. Aqui você aprende a encontrar páginas oficiais, distinguir cadastro geral de oportunidade específica e organizar o que ainda precisa confirmar. Os artigos são guias de pesquisa; uma plataforma citada não representa uma vaga aberta ou uma recomendação de que ela aceita o seu perfil hoje.",
+    "action": "Abra o guia de fontes, escolha uma descrição oficial e registre país aceito, idioma e próxima ação. Use o Radar para conhecer possibilidades e sempre confirme as condições na origem."
+  },
+  {
+    "name": "Currículo e LinkedIn",
+    "slug": "curriculo-e-linkedin",
+    "title": "Currículo e LinkedIn para projetos de treinamento de IA",
+    "description": "Prepare currículo e perfil profissional com experiências reais, coerência e evidências relacionadas à oportunidade.",
+    "intro": "Um perfil bem apresentado explica o que você sabe fazer e em quais experiências isso se apoia. Esta categoria reúne orientações para transformar fatos da sua trajetória em um currículo direcionado e em um LinkedIn coerente. A proposta é demonstrar competências reais, identificar lacunas e evitar que um rascunho com IA acrescente habilidades ou resultados que você não tem.",
+    "action": "Escolha uma oportunidade específica, faça uma lista de requisitos e reúna uma evidência verdadeira para cada ponto relevante antes de escrever o resumo profissional."
+  },
+  {
+    "name": "Candidaturas",
+    "slug": "candidaturas",
+    "title": "Candidaturas a projetos de IA: requisitos e acompanhamento",
+    "description": "Confira requisitos, prepare o envio e acompanhe cada etapa da candidatura a projetos de treinamento e avaliação de IA.",
+    "intro": "Entre encontrar uma página e começar a trabalhar existem informações para conferir, documentos para revisar e retornos para interpretar. Os guias desta categoria ajudam você a organizar o envio e o acompanhamento, registrando apenas o que cada mensagem confirma. Uma data pessoal de conferência serve para organização; ela não é um prazo da empresa.",
+    "action": "Use o checklist antes de enviar e registre a versão do currículo, a situação observada e sua próxima ação. Se faltar um requisito decisivo, resolva a pendência antes de tratar a candidatura como pronta."
+  },
+  {
+    "name": "Prática de avaliação",
+    "slug": "pratica-de-avaliacao",
+    "title": "Prática de avaliação de IA: exemplos e justificativas",
+    "description": "Pratique comparação de respostas de IA, aplicação de critérios e justificativas com exercícios educativos autorais.",
+    "intro": "Avaliar respostas exige conectar uma regra a uma evidência observável. Aqui você encontra exemplos resolvidos e exercícios autorais para treinar esse raciocínio. Os materiais são educativos e independentes: não reproduzem qualificações de empresas nem substituem as instruções de um projeto real. Use cada atividade para identificar o critério, explicar a diferença e revisar a conclusão.",
+    "action": "Leia o exemplo de justificativa e depois tente o treino gratuito. Registre por que escolheu uma resposta antes de ler a explicação para conseguir comparar seu raciocínio."
+  }
+]
