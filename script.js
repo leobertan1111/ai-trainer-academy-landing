@@ -1,13 +1,12 @@
 (() => {
   'use strict';
-  // Preserve the approved pixel, consent key and current launch state.
+  // Meta Pixel ID and checkout destination for the current course.
   const PIXEL_ID = '1619572939144296';
   const CHECKOUT = 'https://pay.cakto.com.br/gzsuitq';
   const WHATSAPP_URL = 'https://wa.me/5546999319286?text=Ol%C3%A1%21%20Tenho%20uma%20d%C3%BAvida%20antes%20de%20entrar%20na%20AI%20Trainer%20Academy.';
   const SALES_OPEN = true;
   const CONSENT_KEY = 'aita_marketing_consent_v1';
   const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
-  const banner = document.getElementById('cookie-banner');
   const stickyOffer = document.getElementById('sticky-offer');
   const footer = document.querySelector('.footer');
   const hero = document.querySelector('.hero');
@@ -18,7 +17,7 @@
   let heroVisible = true;
   let offerVisible = false;
   function updateSticky() {
-    const show = !heroVisible && !offerVisible && banner.hidden;
+    const show = !heroVisible && !offerVisible;
     stickyOffer.classList.toggle('show', show);
     stickyOffer.inert = !show;
     footer.classList.toggle('foot-with-bar', show);
@@ -112,7 +111,7 @@
       vslPlay.hidden = false;
     }
   }
-  // No marketing request before consent.
+  // Respect existing refusals; new visitors are measured when the page opens.
   function loadMetaPixel() {
     if (window.fbq) return;
     !function(f,b,e,v,n,t,s) {
@@ -124,23 +123,23 @@
     window.fbq('track', 'PageView');
     window.fbq('track', 'ViewContent', {content_name:'AI Trainer Academy — Curso Completo',content_type:'product',content_ids:['aita-197'],value:197,currency:'BRL'});
   }
-  function setConsent(value) {
-    try { localStorage.setItem(CONSENT_KEY, value); } catch (_) { /* Choice works for this visit. */ }
-    banner.hidden = true;
-    if (value === 'accepted') loadMetaPixel();
-    updateSticky();
-  }
-  let consent = null;
-  try { consent = localStorage.getItem(CONSENT_KEY); } catch (_) { /* Offer both choices. */ }
-  if (consent === 'accepted') loadMetaPixel();
-  else if (consent !== 'declined') banner.hidden = false;
-  document.getElementById('accept-cookies').addEventListener('click', () => setConsent('accepted'));
-  document.getElementById('decline-cookies').addEventListener('click', () => setConsent('declined'));
-  document.getElementById('privacy-reset').addEventListener('click', () => {
-    try { localStorage.removeItem(CONSENT_KEY); } catch (_) { /* Storage unavailable. */ }
-    privacy.close();
-    banner.hidden = false;
-    updateSticky();
+  let trackingDisabled = false;
+  try { trackingDisabled = localStorage.getItem(CONSENT_KEY) === 'declined'; } catch (_) { /* Storage can be unavailable. */ }
+  if (!trackingDisabled) loadMetaPixel();
+  const privacyOptOut = document.getElementById('privacy-optout');
+  const updatePrivacyButton = () => {
+    privacyOptOut.textContent = trackingDisabled ? 'Ativar rastreamento de publicidade' : 'Desativar rastreamento de publicidade';
+  };
+  updatePrivacyButton();
+  privacyOptOut.addEventListener('click', () => {
+    trackingDisabled = !trackingDisabled;
+    try { localStorage.setItem(CONSENT_KEY, trackingDisabled ? 'declined' : 'accepted'); } catch (_) { /* Choice still applies to this visit. */ }
+    if (trackingDisabled && window.fbq) window.fbq('consent', 'revoke');
+    if (!trackingDisabled) {
+      if (window.fbq) window.fbq('consent', 'grant');
+      else loadMetaPixel();
+    }
+    updatePrivacyButton();
   });
   const checkoutUrl = new URL(CHECKOUT);
   for (const [key, value] of new URLSearchParams(location.search)) {
@@ -150,12 +149,9 @@
     link.href = checkoutUrl.toString();
     link.addEventListener('click', event => {
       if (!SALES_OPEN) { event.preventDefault(); openDialog(prelaunch); return; }
-      if (window.fbq && consentAccepted()) window.fbq('track', 'InitiateCheckout', {content_ids:['aita-197'],value:197,currency:'BRL'});
+      if (window.fbq && !trackingDisabled) window.fbq('track', 'InitiateCheckout', {content_ids:['aita-197'],value:197,currency:'BRL'});
     });
   });
-  function consentAccepted() {
-    try { return localStorage.getItem(CONSENT_KEY) === 'accepted'; } catch (_) { return false; }
-  }
   if (SALES_OPEN) {
     document.getElementById('buy').firstChild.textContent = 'QUERO ABRIR ESSA NOVA FONTE DE RENDA ';
     document.getElementById('availability').textContent = 'Compra segura pela Cakto · 12x de R$ 20,35 + taxa';
