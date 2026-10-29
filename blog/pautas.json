@@ -1,0 +1,126 @@
+{
+  "objetivo": "Cobrir lacunas do nicho com três artigos distintos por lote diário, sem canibalização.",
+  "criada_em": "2026-10-29",
+  "pautas": [
+    {
+      "id": "PAUTA-001",
+      "categoria": "Candidaturas",
+      "tema": "cadastro-qualificacao-alocacao",
+      "titulo_provisorio": "Cadastro, qualificação e alocação: como interpretar cada retorno",
+      "recorte": "Explicar diferenças de etapa usando mensagens hipotéticas e fontes oficiais; não repetir checklist geral.",
+      "status": "planejada"
+    },
+    {
+      "id": "PAUTA-002",
+      "categoria": "Currículo e LinkedIn",
+      "tema": "linkedin-secao-sobre",
+      "titulo_provisorio": "Como escrever a seção Sobre do LinkedIn com evidências reais",
+      "recorte": "Focar só na seção Sobre com exemplos autorais comentados, sem refazer o guia geral de currículo.",
+      "status": "planejada"
+    },
+    {
+      "id": "PAUTA-003",
+      "categoria": "Prática de avaliação",
+      "tema": "correta-mas-incompleta",
+      "titulo_provisorio": "Resposta correta, mas incompleta: como identificar omissões",
+      "recorte": "Separar correção de completude por exemplos autorais e critérios explícitos.",
+      "status": "planejada"
+    },
+    {
+      "id": "PAUTA-004",
+      "categoria": "Oportunidades",
+      "tema": "remoto-pais-residencia",
+      "titulo_provisorio": "Trabalho remoto com IA: como conferir restrições de país",
+      "recorte": "Processo específico para localização e residência; pesquisar anúncios oficiais atuais sem prometer elegibilidade.",
+      "status": "planejada"
+    },
+    {
+      "id": "PAUTA-005",
+      "categoria": "Comece aqui",
+      "tema": "glossario-treinamento-ia",
+      "titulo_provisorio": "Glossário prático: prompt, rubrica, anotação e feedback humano",
+      "recorte": "Definições aplicadas em cenário autoral, com referências primárias.",
+      "status": "planejada"
+    },
+    {
+      "id": "PAUTA-006",
+      "categoria": "Candidaturas",
+      "tema": "registro-candidaturas",
+      "titulo_provisorio": "Como acompanhar candidaturas sem confundir envio com aprovação",
+      "recorte": "Modelo autoral de registro com estados, versões e próximas ações; foco no pós-envio.",
+      "status": "planejada"
+    },
+    {
+      "id": "PAUTA-007",
+      "categoria": "Prática de avaliação",
+      "tema": "rubrica-passo-a-passo",
+      "titulo_provisorio": "Como ler uma rubrica de avaliação antes de comparar respostas",
+      "recorte": "Criar rubrica didática própria, critérios e exemplos de conflito; não material interno.",
+      "status": "planejada"
+    },
+    {
+      "id": "PAUTA-008",
+      "categoria": "Currículo e LinkedIn",
+      "tema": "idiomas-no-curriculo",
+      "titulo_provisorio": "Como apresentar idiomas no currículo sem exagerar seu nível",
+      "recorte": "Evidências e exemplos de descrição; pesquisar referências primárias de proficiência quando necessárias.",
+      "status": "planejada"
+    },
+    {
+      "id": "PAUTA-009",
+      "categoria": "Oportunidades",
+      "tema": "comparar-oportunidades",
+      "titulo_provisorio": "Como comparar duas oportunidades de IA antes de se candidatar",
+      "recorte": "Matriz autoral de compatibilidade e pendências, sem listar vagas supostamente abertas.",
+      "status": "planejada"
+    },
+    {
+      "id": "PAUTA-010",
+      "categoria": "Prática de avaliação",
+      "tema": "erro-factual-verificacao",
+      "titulo_provisorio": "Como verificar uma afirmação factual em uma resposta de IA",
+      "recorte": "Demonstração autoral com fontes primárias e limites de ferramentas permitidas.",
+      "status": "planejada"
+    },
+    {
+      "id": "PAUTA-011",
+      "categoria": "Comece aqui",
+      "tema": "tipos-tarefas-ia",
+      "titulo_provisorio": "Texto, áudio e imagem: como diferem tarefas de treinamento de IA",
+      "recorte": "Comparação de tarefas com fontes oficiais; sem presumir disponibilidade para brasileiros.",
+      "status": "planejada"
+    },
+    {
+      "id": "PAUTA-012",
+      "categoria": "Candidaturas",
+      "tema": "qualificacao-preparacao",
+      "titulo_provisorio": "Como se preparar para uma qualificação respeitando as regras",
+      "recorte": "Rotina de estudo e revisão independente, sem gabaritos ou alegações de aprovação.",
+      "status": "planejada"
+    },
+    {
+      "id": "PAUTA-013",
+      "categoria": "Prática de avaliação",
+      "tema": "checklist-entrega",
+      "titulo_provisorio": "Como revisar uma avaliação antes de entregar",
+      "recorte": "Revisão de coerência, critério e evidência usando tarefa inteiramente autoral.",
+      "status": "planejada"
+    },
+    {
+      "id": "PAUTA-014",
+      "categoria": "Currículo e LinkedIn",
+      "tema": "portfolio-autoral",
+      "titulo_provisorio": "Como montar um pequeno portfólio autoral de avaliação de IA",
+      "recorte": "Como rotular prática, registrar raciocínio e evitar dados confidenciais; sem afirmar exigência universal.",
+      "status": "planejada"
+    },
+    {
+      "id": "PAUTA-015",
+      "categoria": "Candidaturas",
+      "tema": "organizar-instrucoes-projeto",
+      "titulo_provisorio": "Como organizar instruções e dúvidas ao começar um projeto",
+      "recorte": "Método autoral de notas e mudanças de versão; consultar regras oficiais de confidencialidade.",
+      "status": "planejada"
+    }
+  ]
+}
