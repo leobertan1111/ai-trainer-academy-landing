@@ -20,3 +20,14 @@ Repositório GitHub `leobertan1111/ai-trainer-academy-landing`, branch `main`. S
 
 ## Critérios de manutenção
 Preservar o tema visual e CSS compartilhado. O conteúdo é indexável sem JavaScript. Ferramentas públicas não pedem dados sensíveis e não fornecem respostas de qualificações reais. Não afirmar conformidade garantida com Google, posicionamento ou vendas. Revisar conteúdo antigo quando houver mudança factual em vez de trocar só a data.
+
+## Branding e SEO obrigatórios em todas as publicações
+- Preservar o logotipo oficial `/assets/logo.webp`, fonte Inter/Segoe UI/Arial e os tokens de branding da landing: ink #102d3b, navy #0c2230, deep #081923, mint #83ead1, teal #0a736b, paper #f7f8f3. Manter acabamento premium e leitura confortável, com atenção ao celular.
+- Planejar tema por intenção de busca específica e lacuna real no acervo, evitando canibalização de artigos que respondem à mesma pergunta. Relacionar artigos por tema e etapa do leitor; não abrir notícias genéricas de IA.
+- Resposta direta, título descritivo único, description própria, um h1, seções h2 claras e exemplos autorais úteis. Não repetir palavras-chave artificialmente nem perseguir tamanho de texto ou pontuação de ferramentas.
+- Usar o gerador atualizado: preserva canonical, BlogPosting, BreadcrumbList, metadados sociais, RSS e sitemap. Nunca inserir markup de avaliações, FAQ ou credenciais que não correspondam ao conteúdo real. Garantir fontes oficiais abertas e datas verdadeiras. Escapar texto e proibir scripts em conteúdo.
+- Preservar metatag google-site-verification já instalada na landing; execuções editoriais não alteram a landing. A propriedade Search Console é `https://aitraineracademy.online/`; o sitemap é `/sitemap.xml`.
+- Gerador também produz `blog/feed.xml`: incluí-lo no mesmo commit editorial. A imagem social está em `blog/assets/social.webp`, não reescrever o binário sem necessidade.
+- Comparar SEO técnico em cada publicação: URLs canônicas e links internos válidos, página nova no sitemap e RSS, título e description únicos e renderização do conteúdo sem JavaScript. Não incluir páginas de obrigado e upsells no sitemap editorial.
+- Se houver acesso autorizado a métricas do Search Console, usar consultas reais, impressões e cliques para orientar temas e melhorias. Se não houver dados, não inventar volume ou posição. Não alterar credenciais ou conectar serviços durante execução autônoma.
+- Monitorar erros de implantação e de indexabilidade. Submeter sitemap não é garantia de indexação, ranking ou alcance. Não inserir ferramentas de tracking sem configurar privacidade e consentimento aplicáveis.
