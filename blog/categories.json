@@ -38,5 +38,13 @@
     "description": "Pratique comparação de respostas de IA, aplicação de critérios e justificativas com exercícios educativos autorais.",
     "intro": "Avaliar respostas exige conectar uma regra a uma evidência observável. Aqui você encontra exemplos resolvidos e exercícios autorais para treinar esse raciocínio. Os materiais são educativos e independentes: não reproduzem qualificações de empresas nem substituem as instruções de um projeto real. Use cada atividade para identificar o critério, explicar a diferença e revisar a conclusão.",
     "action": "Leia o exemplo de justificativa e depois tente o treino gratuito. Registre por que escolheu uma resposta antes de ler a explicação para conseguir comparar seu raciocínio."
+  },
+  {
+    "name": "Renda com IA em Casa",
+    "slug": "renda-com-ia-em-casa",
+    "title": "Renda com IA em Casa: tarefas, gravações e preparação",
+    "description": "Aprenda a conferir tarefas de coleta de dados, preparar gravações e revisar envios para projetos de IA, com exemplos práticos.",
+    "intro": "Esta área reúne guias para quem quer entender tarefas de coleta de dados feitas em casa: leitura de requisitos, ambiente, equipamento e revisão. O foco é um processo que você consegue adaptar a diferentes plataformas. Uma tarefa só deve ser iniciada depois de conferir as condições do projeto; cadastro e envio não garantem aprovação ou pagamento.",
+    "action": "Comece pelo guia de tarefas, transforme os requisitos em uma lista e faça um ensaio antes de investir em equipamentos."
   }
 ]
