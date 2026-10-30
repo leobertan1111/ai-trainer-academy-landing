@@ -16,7 +16,8 @@
 <link as="image" href="/assets/logo.webp" rel="preload" type="image/webp"/>
 <link as="image" href="/assets/earnings.webp" rel="preload" type="image/webp"/>
 <link href="/styles.css" rel="stylesheet"/>
-<script>(() => {
+<script>document.addEventListener('DOMContentLoaded', function () {
+(() => {
   'use strict';
   // Meta Pixel ID and checkout destination for the current course.
   const PIXEL_ID = '1619572939144296';
@@ -139,11 +140,11 @@
     }(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
     window.fbq('init', PIXEL_ID);
     window.fbq('track', 'PageView');
-    window.fbq('track', 'ViewContent', {content_name:'AI Trainer Academy — Curso Completo',content_type:'product',content_ids:['aita-197'],value:197,currency:'BRL'});
+    window.fbq('track', 'ViewContent', {content_name:'AI Trainer Academy — Oferta para alunos',content_type:'product',content_ids:['aita-upsell-147'],value:147,currency:'BRL'});
   }
   let trackingDisabled = false;
   try { trackingDisabled = localStorage.getItem(CONSENT_KEY) === 'declined'; } catch (_) { /* Storage can be unavailable. */ }
-  if (!trackingDisabled) loadMetaPixel();
+  if (!trackingDisabled && JSON.parse(document.getElementById('upsell-config').textContent).offerId) loadMetaPixel();
   const privacyOptOut = document.getElementById('privacy-optout');
   const updatePrivacyButton = () => {
     privacyOptOut.textContent = trackingDisabled ? 'Ativar rastreamento de publicidade' : 'Desativar rastreamento de publicidade';
@@ -167,7 +168,7 @@
     link.href = checkoutUrl.toString();
     link.addEventListener('click', event => {
       if (!SALES_OPEN) { event.preventDefault(); openDialog(prelaunch); return; }
-      if (window.fbq && !trackingDisabled) window.fbq('track', 'InitiateCheckout', {content_ids:['aita-197'],value:197,currency:'BRL'});
+      if (window.fbq && !trackingDisabled) window.fbq('track', 'InitiateCheckout', {content_ids:['aita-upsell-147'],value:147,currency:'BRL'});
     });
   });
   if (SALES_OPEN) {
@@ -313,18 +314,11 @@
     });
   }
 })();
-</script>
+
+});</script>
 <title>Condição de aluno: AI Trainer Academy por R$ 147 adicionais</title>
 <meta content="aSqHvmz-eEyI178oE5hs-ODsJkp27PYgv5UrTCl557U" name="google-site-verification"/>
-<style>.bridge-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:32px}.bridge-grid article{background:#f0f4ec;border:1px solid #d6e2d5;border-radius:20px;padding:30px}.bridge-grid small{font-size:11px;font-weight:800;color:#0b7058}.bridge-grid h3{font-size:25px;margin:12px 0}.bridge-grid p{margin:15px 0 0}.upsell-reject{display:block;text-align:center;text-decoration:underline;font-size:12px;line-height:1.7;margin-top:19px}.btn:disabled{opacity:.65;cursor:not-allowed}#preview-banner{padding:10px 18px;background:#e8efd3;text-align:center;font-size:12px;color:#183932}.offer-card cakto-upsell-buttons{display:block;margin-top:22px}.offer-card cakto-upsell-accept{display:block;background:#0b7058;color:white;padding:20px;border-radius:12px;font-weight:800;text-align:center}.offer-card cakto-upsell-reject{display:block;margin-top:15px;text-align:center;font-size:12px;cursor:pointer}@media(max-width:700px){.bridge-grid{grid-template-columns:1fr}.bridge-grid article{padding:23px}.installment-price strong{font-size:54px!important}}</style><!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-82S9M9TYKR"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-82S9M9TYKR');
-</script>
-</head>
+<style>.bridge-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:32px}.bridge-grid article{background:#f0f4ec;border:1px solid #d6e2d5;border-radius:20px;padding:30px}.bridge-grid small{font-size:11px;font-weight:800;color:#0b7058}.bridge-grid h3{font-size:25px;margin:12px 0}.bridge-grid p{margin:15px 0 0}.upsell-reject{display:block;text-align:center;text-decoration:underline;font-size:12px;line-height:1.7;margin-top:19px}.btn:disabled{opacity:.65;cursor:not-allowed}#preview-banner{padding:10px 18px;background:#e8efd3;text-align:center;font-size:12px;color:#183932}.offer-card cakto-upsell-buttons{display:block;margin-top:22px}.offer-card cakto-upsell-accept{display:block;background:#0b7058;color:white;padding:20px;border-radius:12px;font-weight:800;text-align:center}.offer-card cakto-upsell-reject{display:block;margin-top:15px;text-align:center;font-size:12px;cursor:pointer}@media(max-width:700px){.bridge-grid{grid-template-columns:1fr}.bridge-grid article{padding:23px}.installment-price strong{font-size:54px!important}}</style></head>
 <body><div id="preview-banner">PRÉVIA DA OFERTA · Página preparada; integração de pagamento pendente.</div>
 <svg aria-hidden="true" height="0" style="position:absolute;overflow:hidden" width="0" xmlns="http://www.w3.org/2000/svg"><defs>
 <symbol id="icon-arrow" viewbox="0 0 24 24"><path d="M5 19 19 5M5 5h14v14" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></symbol>
