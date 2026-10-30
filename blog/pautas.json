@@ -8,7 +8,10 @@
       "tema": "cadastro-qualificacao-alocacao",
       "titulo_provisorio": "Cadastro, qualificação e alocação: como interpretar cada retorno",
       "recorte": "Explicar diferenças de etapa usando mensagens hipotéticas e fontes oficiais; não repetir checklist geral.",
-      "status": "planejada"
+      "status": "publicada",
+      "url": "https://aitraineracademy.online/blog/cadastro-qualificacao-alocacao/",
+      "publicada_em": "2026-10-30",
+      "commit_publicacao": "092e6c00bf1c8abc0dbf8e4eb9df10be86e419cb"
     },
     {
       "id": "PAUTA-002",
@@ -24,7 +27,10 @@
       "tema": "correta-mas-incompleta",
       "titulo_provisorio": "Resposta correta, mas incompleta: como identificar omissões",
       "recorte": "Separar correção de completude por exemplos autorais e critérios explícitos.",
-      "status": "planejada"
+      "status": "publicada",
+      "url": "https://aitraineracademy.online/blog/resposta-correta-mas-incompleta/",
+      "publicada_em": "2026-10-30",
+      "commit_publicacao": "092e6c00bf1c8abc0dbf8e4eb9df10be86e419cb"
     },
     {
       "id": "PAUTA-004",
@@ -64,7 +70,10 @@
       "tema": "idiomas-no-curriculo",
       "titulo_provisorio": "Como apresentar idiomas no currículo sem exagerar seu nível",
       "recorte": "Evidências e exemplos de descrição; pesquisar referências primárias de proficiência quando necessárias.",
-      "status": "planejada"
+      "status": "publicada",
+      "url": "https://aitraineracademy.online/blog/idiomas-no-curriculo/",
+      "publicada_em": "2026-10-30",
+      "commit_publicacao": "092e6c00bf1c8abc0dbf8e4eb9df10be86e419cb"
     },
     {
       "id": "PAUTA-009",
