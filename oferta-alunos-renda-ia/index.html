@@ -71,13 +71,12 @@
     const progress = document.getElementById('vsl-progress');
     const progressFill = document.getElementById('vsl-progress-fill');
     const time = document.getElementById('vsl-time');
-    const presentationEnd = Number(vslVideo.dataset.clipEnd) || 111;
     let furthestTime = 0;
     let autoplayAttempted = false;
     const formatTime = seconds => `${Math.floor(seconds / 60)}:${String(Math.floor(seconds % 60)).padStart(2, '0')}`;
-    const startVideo = () => { if (vslVideo.currentTime >= presentationEnd - 0.05) vslVideo.currentTime = 0; return vslVideo.play().catch(() => { vslPlay.hidden = false; }); };
+    const startVideo = () => vslVideo.play().catch(() => { vslPlay.hidden = false; });
     const updateProgress = () => {
-      const duration = Number.isFinite(vslVideo.duration) ? Math.min(vslVideo.duration, presentationEnd) : presentationEnd;
+      const duration = Number.isFinite(vslVideo.duration) ? vslVideo.duration : 209.003;
       const percent = Math.min(100, (vslVideo.currentTime / duration) * 100);
       progressFill.style.width = `${percent}%`;
       progress.setAttribute('aria-valuenow', String(Math.round(percent)));
@@ -86,7 +85,7 @@
     };
     vslPlay.addEventListener('click', startVideo);
     toggle.addEventListener('click', () => {
-      if (vslVideo.ended || vslVideo.currentTime >= presentationEnd - 0.05) vslVideo.currentTime = 0;
+      if (vslVideo.ended) vslVideo.currentTime = 0;
       if (vslVideo.paused) startVideo();
       else vslVideo.pause();
     });
@@ -99,11 +98,6 @@
     sound.addEventListener('click', toggleSound);
     soundOverlay.addEventListener('click', toggleSound);
     vslVideo.addEventListener('timeupdate', () => {
-      if (vslVideo.currentTime >= presentationEnd) {
-        vslVideo.pause();
-        if (vslVideo.currentTime > presentationEnd + 0.05) vslVideo.currentTime = presentationEnd;
-        toggle.textContent = 'Rever'; toggle.setAttribute('aria-label', 'Rever vídeo');
-      }
       furthestTime = Math.max(furthestTime, vslVideo.currentTime);
       updateProgress();
     });
@@ -350,10 +344,10 @@
 <main id="principal"><section class="section upsell-bridge"><div class="container"><div class="eyebrow">Dois cursos. Propostas complementares.</div><h2>Você não está comprando de novo o mesmo conteúdo.</h2><div class="bridge-grid"><article><small>VOCÊ JÁ ESCOLHEU</small><h3>Renda com IA em Casa</h3><p>Preparação para buscar projetos de gravação de atividades do dia a dia em primeira pessoa.</p><p>Não exige saber inglês para acompanhar o curso.</p></article><article><small>ADICIONAL OPCIONAL · 12x DE R$ 15,19 + TAXA</small><h3>AI Trainer Academy</h3><p>Preparação para procurar outras modalidades de projetos, fortalecer candidaturas e praticar avaliação de respostas de IA.</p><p>Alguns projetos podem exigir inglês, testes e habilidades específicas. Os requisitos variam por empresa.</p></article></div></div></section>
 <section aria-labelledby="vsl-title" class="vsl-section" id="video"><div class="container vsl-wrap reveal">
 <div class="eyebrow">Antes de decidir, veja com seus próprios olhos</div>
-<h2 id="vsl-title">O caminho para buscar projetos em dólar, <span class="accent">em menos de 3 minutos.</span></h2>
+<h2 id="vsl-title">Conheça o curso que pode <span class="accent">ampliar sua preparação.</span></h2>
 <p>Conheça a experiência que deu origem ao treinamento e veja como a AI Trainer Academy organiza seus próximos passos.</p>
-<div class="vsl-frame spotlight"><video aria-label="Vídeo de apresentação da AI Trainer Academy" controlslist="nodownload noplaybackrate noremoteplayback" data-clip-end="111" disablepictureinpicture="" height="1080" id="vsl-video" muted="" playsinline="" poster="/assets/vsl-poster.webp" preload="metadata" tabindex="-1" width="1920"><source src="/assets/vsl-oficial.mp4#t=0,111" type="video/mp4"/>Seu navegador não reproduz este vídeo. <a href="#oferta">Veja a condição exclusiva abaixo.</a></video><button aria-label="Reproduzir vídeo de apresentação" class="vsl-play" hidden="" id="vsl-play" type="button"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="m9 5 11 7-11 7z" fill="currentColor"></path></svg></button><button class="vsl-sound-overlay" hidden="" id="vsl-sound-overlay" type="button"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M4 9v6h4l5 4V5L8 9H4Zm12-1a6 6 0 0 1 0 8m2.5-10.5a9 9 0 0 1 0 13" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg><span>Clique para ativar o som</span></button><div aria-label="Controles do vídeo" class="vsl-controls"><button aria-label="Reproduzir vídeo" id="vsl-toggle" type="button">Reproduzir</button><div aria-label="Progresso do vídeo" aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" class="vsl-progress" id="vsl-progress" role="progressbar"><span id="vsl-progress-fill"></span></div><span class="vsl-time" id="vsl-time">0:00 / 1:51</span><button aria-label="Ativar áudio" id="vsl-sound" type="button">Ativar som</button></div></div>
-<p class="vsl-caption">Apresentação do curso, com duração de 1min51s. A condição exclusiva e o parcelamento desta oferta estão abaixo. Ative o áudio no player. Resultados mostrados são dos criadores e variam de pessoa para pessoa.</p>
+<div class="vsl-frame spotlight"><video aria-label="Vídeo de apresentação da AI Trainer Academy" controlslist="nodownload noplaybackrate noremoteplayback" disablepictureinpicture="" height="1080" id="vsl-video" muted="" playsinline="" poster="/assets/upsell/capa-alunos-renda-ia.webp" preload="metadata" tabindex="-1" width="1920"><source src="/assets/upsell/vsl-alunos-renda-ia.mp4" type="video/mp4"/>Seu navegador não reproduz este vídeo. <a href="/assets/upsell/vsl-alunos-renda-ia.mp4">Abra a apresentação completa em MP4.</a></video><button aria-label="Reproduzir vídeo de apresentação" class="vsl-play" hidden="" id="vsl-play" type="button"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="m9 5 11 7-11 7z" fill="currentColor"></path></svg></button><button class="vsl-sound-overlay" hidden="" id="vsl-sound-overlay" type="button"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M4 9v6h4l5 4V5L8 9H4Zm12-1a6 6 0 0 1 0 8m2.5-10.5a9 9 0 0 1 0 13" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg><span>Clique para ativar o som</span></button><div aria-label="Controles do vídeo" class="vsl-controls"><button aria-label="Reproduzir vídeo" id="vsl-toggle" type="button">Reproduzir</button><div aria-label="Progresso do vídeo" aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" class="vsl-progress" id="vsl-progress" role="progressbar"><span id="vsl-progress-fill"></span></div><span class="vsl-time" id="vsl-time">0:00 / 3:29</span><button aria-label="Ativar áudio" id="vsl-sound" type="button">Ativar som</button></div></div>
+<p class="vsl-caption">Apresentação completa da oferta para alunos. Ative o áudio no player. Resultados mostrados são dos criadores e variam de pessoa para pessoa.</p>
 </div></section>
 <section aria-label="Plataformas abordadas no curso" class="brand-strip"><p class="platform-caption">Plataformas internacionais onde podem surgir projetos remunerados de treinamento e avaliação de IA</p><div class="marquee"><div class="marquee-group"><span class="platform">Outlier <i>✳</i></span><span class="platform">CrowdGen <i>✳</i></span><span class="platform">TELUS Digital <i>✳</i></span><span class="platform">RWS TrainAI <i>✳</i></span><span class="platform">Welo Data <i>✳</i></span><span class="platform">OneForma <i>✳</i></span></div><div aria-hidden="true" class="marquee-group"><span class="platform">Outlier <i>✳</i></span><span class="platform">CrowdGen <i>✳</i></span><span class="platform">TELUS Digital <i>✳</i></span><span class="platform">RWS TrainAI <i>✳</i></span><span class="platform">Welo Data <i>✳</i></span><span class="platform">OneForma <i>✳</i></span></div></div></section>
 <section class="section" id="oportunidades"><div class="container opportunity-grid">
