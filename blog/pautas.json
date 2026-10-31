@@ -46,9 +46,12 @@
       "tema": "glossario-treinamento-ia",
       "titulo_provisorio": "Glossário prático: prompt, rubrica, anotação e feedback humano",
       "recorte": "Definições aplicadas em cenário autoral, com referências primárias.",
-      "status": "aguardando_confirmacao_deploy",
-      "url_prevista": "https://aitraineracademy.online/blog/glossario-treinamento-ia/",
-      "preparada_em": "2026-10-31"
+      "status": "publicada",
+      "preparada_em": "2026-10-31",
+      "url": "https://aitraineracademy.online/blog/glossario-treinamento-ia/",
+      "publicada_em": "2026-10-31",
+      "commit_publicacao": "244bb341106ed86018683737ff0d76e25676fe11",
+      "deploy_publicacao": "dpl_AkjzEEdhnB32QrMh9rTs5fvwY3rH"
     },
     {
       "id": "PAUTA-006",
@@ -64,9 +67,12 @@
       "tema": "rubrica-passo-a-passo",
       "titulo_provisorio": "Como ler uma rubrica de avaliação antes de comparar respostas",
       "recorte": "Criar rubrica didática própria, critérios e exemplos de conflito; não material interno.",
-      "status": "aguardando_confirmacao_deploy",
-      "url_prevista": "https://aitraineracademy.online/blog/rubrica-avaliacao-passo-a-passo/",
-      "preparada_em": "2026-10-31"
+      "status": "publicada",
+      "preparada_em": "2026-10-31",
+      "url": "https://aitraineracademy.online/blog/rubrica-avaliacao-passo-a-passo/",
+      "publicada_em": "2026-10-31",
+      "commit_publicacao": "244bb341106ed86018683737ff0d76e25676fe11",
+      "deploy_publicacao": "dpl_AkjzEEdhnB32QrMh9rTs5fvwY3rH"
     },
     {
       "id": "PAUTA-008",
@@ -141,9 +147,12 @@
       "tema": "formato-codec-arquivo-gravacao-ia",
       "titulo_provisorio": "MP4, codec e resolução: como conferir o arquivo de uma gravação para IA",
       "recorte": "Conferência de contêiner, codec e propriedades com ficha técnica autoral; não repetir revisão geral.",
-      "status": "aguardando_confirmacao_deploy",
-      "url_prevista": "https://aitraineracademy.online/blog/formato-codec-arquivo-gravacao-ia/",
-      "preparada_em": "2026-10-31"
+      "status": "publicada",
+      "preparada_em": "2026-10-31",
+      "url": "https://aitraineracademy.online/blog/formato-codec-arquivo-gravacao-ia/",
+      "publicada_em": "2026-10-31",
+      "commit_publicacao": "244bb341106ed86018683737ff0d76e25676fe11",
+      "deploy_publicacao": "dpl_AkjzEEdhnB32QrMh9rTs5fvwY3rH"
     },
     {
       "id": "PAUTA-017",
@@ -151,9 +160,12 @@
       "tema": "audio-estourado-baixo-ruido-gravacao-ia",
       "titulo_provisorio": "Áudio estourado, baixo ou com ruído: como diagnosticar antes de gravar o lote",
       "recorte": "Diagnóstico comparativo de distorção, volume e ruído; não repetir preparo geral do ambiente.",
-      "status": "aguardando_confirmacao_deploy",
-      "url_prevista": "https://aitraineracademy.online/blog/audio-estourado-baixo-ruido-gravacao-ia/",
-      "preparada_em": "2026-10-31"
+      "status": "publicada",
+      "preparada_em": "2026-10-31",
+      "url": "https://aitraineracademy.online/blog/audio-estourado-baixo-ruido-gravacao-ia/",
+      "publicada_em": "2026-10-31",
+      "commit_publicacao": "244bb341106ed86018683737ff0d76e25676fe11",
+      "deploy_publicacao": "dpl_AkjzEEdhnB32QrMh9rTs5fvwY3rH"
     }
   ]
 }
