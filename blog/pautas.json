@@ -1,5 +1,5 @@
 {
-  "objetivo": "Cobrir lacunas do nicho com três artigos distintos por lote diário, sem canibalização.",
+  "objetivo": "Cobrir lacunas do nicho com quatro artigos distintos por lote diário: dois por área, sem canibalização.",
   "criada_em": "2026-10-29",
   "pautas": [
     {
@@ -46,7 +46,9 @@
       "tema": "glossario-treinamento-ia",
       "titulo_provisorio": "Glossário prático: prompt, rubrica, anotação e feedback humano",
       "recorte": "Definições aplicadas em cenário autoral, com referências primárias.",
-      "status": "planejada"
+      "status": "aguardando_confirmacao_deploy",
+      "url_prevista": "https://aitraineracademy.online/blog/glossario-treinamento-ia/",
+      "preparada_em": "2026-10-31"
     },
     {
       "id": "PAUTA-006",
@@ -62,7 +64,9 @@
       "tema": "rubrica-passo-a-passo",
       "titulo_provisorio": "Como ler uma rubrica de avaliação antes de comparar respostas",
       "recorte": "Criar rubrica didática própria, critérios e exemplos de conflito; não material interno.",
-      "status": "planejada"
+      "status": "aguardando_confirmacao_deploy",
+      "url_prevista": "https://aitraineracademy.online/blog/rubrica-avaliacao-passo-a-passo/",
+      "preparada_em": "2026-10-31"
     },
     {
       "id": "PAUTA-008",
@@ -130,6 +134,26 @@
       "titulo_provisorio": "Como organizar instruções e dúvidas ao começar um projeto",
       "recorte": "Método autoral de notas e mudanças de versão; consultar regras oficiais de confidencialidade.",
       "status": "planejada"
+    },
+    {
+      "id": "PAUTA-016",
+      "categoria": "Renda com IA em Casa",
+      "tema": "formato-codec-arquivo-gravacao-ia",
+      "titulo_provisorio": "MP4, codec e resolução: como conferir o arquivo de uma gravação para IA",
+      "recorte": "Conferência de contêiner, codec e propriedades com ficha técnica autoral; não repetir revisão geral.",
+      "status": "aguardando_confirmacao_deploy",
+      "url_prevista": "https://aitraineracademy.online/blog/formato-codec-arquivo-gravacao-ia/",
+      "preparada_em": "2026-10-31"
+    },
+    {
+      "id": "PAUTA-017",
+      "categoria": "Renda com IA em Casa",
+      "tema": "audio-estourado-baixo-ruido-gravacao-ia",
+      "titulo_provisorio": "Áudio estourado, baixo ou com ruído: como diagnosticar antes de gravar o lote",
+      "recorte": "Diagnóstico comparativo de distorção, volume e ruído; não repetir preparo geral do ambiente.",
+      "status": "aguardando_confirmacao_deploy",
+      "url_prevista": "https://aitraineracademy.online/blog/audio-estourado-baixo-ruido-gravacao-ia/",
+      "preparada_em": "2026-10-31"
     }
   ]
 }
