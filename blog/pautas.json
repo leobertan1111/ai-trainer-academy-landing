@@ -17,9 +17,12 @@
       "id": "PAUTA-002",
       "categoria": "Currículo e LinkedIn",
       "tema": "linkedin-secao-sobre",
-      "titulo_provisorio": "Como escrever a seção Sobre do LinkedIn com evidências reais",
+      "titulo_provisorio": "Como escrever o Sobre do LinkedIn para buscar projetos de IA",
       "recorte": "Focar só na seção Sobre com exemplos autorais comentados, sem refazer o guia geral de currículo.",
-      "status": "planejada"
+      "status": "preparada",
+      "preparada_em": "2026-11-01",
+      "url": "https://aitraineracademy.online/blog/linkedin-secao-sobre-projetos-ia/",
+      "pendencia": "Confirmar implantação READY e URL após commit editorial."
     },
     {
       "id": "PAUTA-003",
@@ -36,9 +39,12 @@
       "id": "PAUTA-004",
       "categoria": "Oportunidades",
       "tema": "remoto-pais-residencia",
-      "titulo_provisorio": "Trabalho remoto com IA: como conferir restrições de país",
+      "titulo_provisorio": "Vaga remota de IA aceita quem mora no Brasil? Como conferir",
       "recorte": "Processo específico para localização e residência; pesquisar anúncios oficiais atuais sem prometer elegibilidade.",
-      "status": "planejada"
+      "status": "preparada",
+      "preparada_em": "2026-11-01",
+      "url": "https://aitraineracademy.online/blog/trabalho-remoto-ia-restricoes-pais/",
+      "pendencia": "Confirmar implantação READY e URL após commit editorial."
     },
     {
       "id": "PAUTA-005",
@@ -166,6 +172,28 @@
       "publicada_em": "2026-10-31",
       "commit_publicacao": "244bb341106ed86018683737ff0d76e25676fe11",
       "deploy_publicacao": "dpl_AkjzEEdhnB32QrMh9rTs5fvwY3rH"
+    },
+    {
+      "id": "PAUTA-018",
+      "categoria": "Renda com IA em Casa",
+      "tema": "privacidade-gravacoes-ia-em-casa",
+      "recorte": "Inspeção de percurso e reflexos, participantes e dados na cena.",
+      "titulo_provisorio": "O que tirar da cena antes de gravar tarefas de IA em casa",
+      "status": "preparada",
+      "preparada_em": "2026-11-01",
+      "url": "https://aitraineracademy.online/blog/privacidade-gravacoes-ia-em-casa/",
+      "pendencia": "Confirmar implantação READY e URL após commit editorial."
+    },
+    {
+      "id": "PAUTA-019",
+      "categoria": "Renda com IA em Casa",
+      "tema": "gravacao-ia-interrompida-o-que-fazer",
+      "recorte": "Diagnóstico de interrupções e continuidade, sem ocultar falhas.",
+      "titulo_provisorio": "A gravação da tarefa de IA parou no meio: o que fazer?",
+      "status": "preparada",
+      "preparada_em": "2026-11-01",
+      "url": "https://aitraineracademy.online/blog/gravacao-ia-interrompida-o-que-fazer/",
+      "pendencia": "Confirmar implantação READY e URL após commit editorial."
     }
   ]
 }
