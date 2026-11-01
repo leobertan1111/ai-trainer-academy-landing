@@ -19,10 +19,12 @@
       "tema": "linkedin-secao-sobre",
       "titulo_provisorio": "Como escrever o Sobre do LinkedIn para buscar projetos de IA",
       "recorte": "Focar só na seção Sobre com exemplos autorais comentados, sem refazer o guia geral de currículo.",
-      "status": "preparada",
+      "status": "publicada",
       "preparada_em": "2026-11-01",
       "url": "https://aitraineracademy.online/blog/linkedin-secao-sobre-projetos-ia/",
-      "pendencia": "Confirmar implantação READY e URL após commit editorial."
+      "publicada_em": "2026-11-01",
+      "commit_publicacao": "28e09d33fdaa72c0e074fa4f05f15b7c1054eb91",
+      "deploy_publicacao": "dpl_AUtNeymUZeYgN3qBKegStETdFzWK"
     },
     {
       "id": "PAUTA-003",
@@ -41,10 +43,12 @@
       "tema": "remoto-pais-residencia",
       "titulo_provisorio": "Vaga remota de IA aceita quem mora no Brasil? Como conferir",
       "recorte": "Processo específico para localização e residência; pesquisar anúncios oficiais atuais sem prometer elegibilidade.",
-      "status": "preparada",
+      "status": "publicada",
       "preparada_em": "2026-11-01",
       "url": "https://aitraineracademy.online/blog/trabalho-remoto-ia-restricoes-pais/",
-      "pendencia": "Confirmar implantação READY e URL após commit editorial."
+      "publicada_em": "2026-11-01",
+      "commit_publicacao": "28e09d33fdaa72c0e074fa4f05f15b7c1054eb91",
+      "deploy_publicacao": "dpl_AUtNeymUZeYgN3qBKegStETdFzWK"
     },
     {
       "id": "PAUTA-005",
@@ -179,10 +183,12 @@
       "tema": "privacidade-gravacoes-ia-em-casa",
       "recorte": "Inspeção de percurso e reflexos, participantes e dados na cena.",
       "titulo_provisorio": "O que tirar da cena antes de gravar tarefas de IA em casa",
-      "status": "preparada",
+      "status": "publicada",
       "preparada_em": "2026-11-01",
       "url": "https://aitraineracademy.online/blog/privacidade-gravacoes-ia-em-casa/",
-      "pendencia": "Confirmar implantação READY e URL após commit editorial."
+      "publicada_em": "2026-11-01",
+      "commit_publicacao": "28e09d33fdaa72c0e074fa4f05f15b7c1054eb91",
+      "deploy_publicacao": "dpl_AUtNeymUZeYgN3qBKegStETdFzWK"
     },
     {
       "id": "PAUTA-019",
@@ -190,10 +196,12 @@
       "tema": "gravacao-ia-interrompida-o-que-fazer",
       "recorte": "Diagnóstico de interrupções e continuidade, sem ocultar falhas.",
       "titulo_provisorio": "A gravação da tarefa de IA parou no meio: o que fazer?",
-      "status": "preparada",
+      "status": "publicada",
       "preparada_em": "2026-11-01",
       "url": "https://aitraineracademy.online/blog/gravacao-ia-interrompida-o-que-fazer/",
-      "pendencia": "Confirmar implantação READY e URL após commit editorial."
+      "publicada_em": "2026-11-01",
+      "commit_publicacao": "28e09d33fdaa72c0e074fa4f05f15b7c1054eb91",
+      "deploy_publicacao": "dpl_AUtNeymUZeYgN3qBKegStETdFzWK"
     }
   ]
 }
