@@ -69,7 +69,13 @@
       "tema": "registro-candidaturas",
       "titulo_provisorio": "Como acompanhar candidaturas sem confundir envio com aprovação",
       "recorte": "Modelo autoral de registro com estados, versões e próximas ações; foco no pós-envio.",
-      "status": "planejada"
+      "status": "descartada_por_sobreposicao",
+      "revisada_em": "2026-11-02",
+      "motivo": "O recorte já está coberto pelos artigos de checklist de candidatura e cadastro, qualificação e alocação. Não criar nova página equivalente.",
+      "artigos_existentes": [
+        "https://aitraineracademy.online/blog/checklist-candidatura-projetos-ia/",
+        "https://aitraineracademy.online/blog/cadastro-qualificacao-alocacao/"
+      ]
     },
     {
       "id": "PAUTA-007",
@@ -107,9 +113,12 @@
       "id": "PAUTA-010",
       "categoria": "Prática de avaliação",
       "tema": "erro-factual-verificacao",
-      "titulo_provisorio": "Como verificar uma afirmação factual em uma resposta de IA",
+      "titulo_provisorio": "Como conferir se uma informação numa resposta de IA está correta",
       "recorte": "Demonstração autoral com fontes primárias e limites de ferramentas permitidas.",
-      "status": "planejada"
+      "status": "preparada",
+      "preparada_em": "2026-11-02",
+      "url": "https://aitraineracademy.online/blog/verificar-fatos-respostas-ia/",
+      "pendencia": "Confirmar deploy READY e URL pública."
     },
     {
       "id": "PAUTA-011",
@@ -123,9 +132,12 @@
       "id": "PAUTA-012",
       "categoria": "Candidaturas",
       "tema": "qualificacao-preparacao",
-      "titulo_provisorio": "Como se preparar para uma qualificação respeitando as regras",
+      "titulo_provisorio": "Como se preparar para uma qualificação de avaliador de IA",
       "recorte": "Rotina de estudo e revisão independente, sem gabaritos ou alegações de aprovação.",
-      "status": "planejada"
+      "status": "preparada",
+      "preparada_em": "2026-11-02",
+      "url": "https://aitraineracademy.online/blog/preparacao-qualificacao-avaliador-ia/",
+      "pendencia": "Confirmar deploy READY e URL pública."
     },
     {
       "id": "PAUTA-013",
@@ -202,6 +214,28 @@
       "publicada_em": "2026-11-01",
       "commit_publicacao": "28e09d33fdaa72c0e074fa4f05f15b7c1054eb91",
       "deploy_publicacao": "dpl_AUtNeymUZeYgN3qBKegStETdFzWK"
+    },
+    {
+      "id": "PAUTA-020",
+      "categoria": "Renda com IA em Casa",
+      "tema": "espaco-celular-gravacoes-ia",
+      "recorte": "Planejamento de espaço local, proteção de capturas pendentes e diferença entre cache, dados e exclusão sincronizada.",
+      "titulo_provisorio": "Celular sem espaço: o que conferir antes de gravar tarefas de IA",
+      "status": "preparada",
+      "preparada_em": "2026-11-02",
+      "url": "https://aitraineracademy.online/blog/espaco-celular-gravacoes-ia/",
+      "pendencia": "Confirmar deploy READY e URL pública."
+    },
+    {
+      "id": "PAUTA-021",
+      "categoria": "Renda com IA em Casa",
+      "tema": "planejar-tempo-gravacoes-ia-em-casa",
+      "recorte": "Planejamento do tempo total de preparação, ensaio, captura, revisão e envio, com agenda autoral sem previsão de renda.",
+      "titulo_provisorio": "Quanto tempo reservar para uma tarefa de gravação de IA em casa?",
+      "status": "preparada",
+      "preparada_em": "2026-11-02",
+      "url": "https://aitraineracademy.online/blog/planejar-tempo-gravacoes-ia-em-casa/",
+      "pendencia": "Confirmar deploy READY e URL pública."
     }
   ]
 }
