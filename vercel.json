@@ -1,0 +1,22 @@
+{
+  "trailingSlash": true,
+  "redirects": [
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "metodotreinadordeia.online"
+        }
+      ],
+      "destination": "/metodo/",
+      "permanent": false
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/metodo/:path*",
+      "destination": "/renda-com-ia-em-casa/:path*"
+    }
+  ]
+}
