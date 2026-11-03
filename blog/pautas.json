@@ -107,10 +107,12 @@
       "tema": "comparar-oportunidades",
       "titulo_provisorio": "Como comparar duas oportunidades de IA antes de se candidatar",
       "recorte": "Matriz autoral de compatibilidade e pendências, sem listar vagas supostamente abertas.",
-      "status": "preparada",
+      "status": "publicada",
       "preparada_em": "2026-11-03",
       "url": "https://aitraineracademy.online/blog/comparar-oportunidades-projetos-ia/",
-      "pendencia": "Confirmar READY e URLs do lote."
+      "publicada_em": "2026-11-03",
+      "commit_publicacao": "821c075b0f121f959723312194e27f5aca2c5955",
+      "deploy_publicacao": "dpl_2YRZGGVUB6LKMxHtFV14zUfDG7we"
     },
     {
       "id": "PAUTA-010",
@@ -160,10 +162,12 @@
       "tema": "portfolio-autoral",
       "titulo_provisorio": "Como montar um portfólio de avaliação de IA com exercícios próprios",
       "recorte": "Como rotular prática, registrar raciocínio e evitar dados confidenciais; sem afirmar exigência universal.",
-      "status": "preparada",
+      "status": "publicada",
       "preparada_em": "2026-11-03",
       "url": "https://aitraineracademy.online/blog/portfolio-autoral-avaliacao-ia/",
-      "pendencia": "Confirmar READY e URLs do lote."
+      "publicada_em": "2026-11-03",
+      "commit_publicacao": "821c075b0f121f959723312194e27f5aca2c5955",
+      "deploy_publicacao": "dpl_2YRZGGVUB6LKMxHtFV14zUfDG7we"
     },
     {
       "id": "PAUTA-015",
@@ -257,10 +261,12 @@
       "tema": "tarefas-gravacao-ia-dois-participantes",
       "recorte": "Preparação de papéis, participação e ensaio conjunto para tarefas com duas pessoas, sem afirmar vagas abertas.",
       "titulo_provisorio": "A tarefa de gravação para IA pede duas pessoas: como se preparar",
-      "status": "preparada",
+      "status": "publicada",
       "preparada_em": "2026-11-03",
       "url": "https://aitraineracademy.online/blog/tarefas-gravacao-ia-dois-participantes/",
-      "pendencia": "Confirmar READY e URLs do lote."
+      "publicada_em": "2026-11-03",
+      "commit_publicacao": "821c075b0f121f959723312194e27f5aca2c5955",
+      "deploy_publicacao": "dpl_2YRZGGVUB6LKMxHtFV14zUfDG7we"
     },
     {
       "id": "PAUTA-023",
@@ -268,10 +274,12 @@
       "tema": "video-escuro-claro-gravacoes-ia",
       "recorte": "Diagnóstico de sombras e brilho durante a ação, comparando ensaios sem editar material original.",
       "titulo_provisorio": "Vídeo escuro ou claro demais: como testar a luz para tarefas de IA",
-      "status": "preparada",
+      "status": "publicada",
       "preparada_em": "2026-11-03",
       "url": "https://aitraineracademy.online/blog/video-escuro-claro-gravacoes-ia/",
-      "pendencia": "Confirmar READY e URLs do lote."
+      "publicada_em": "2026-11-03",
+      "commit_publicacao": "821c075b0f121f959723312194e27f5aca2c5955",
+      "deploy_publicacao": "dpl_2YRZGGVUB6LKMxHtFV14zUfDG7we"
     }
   ]
 }
